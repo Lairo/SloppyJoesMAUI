@@ -5,27 +5,50 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <ScrollView>
-        <Grid>
+        <Grid Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition />
-                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition />
-                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition />                
             </Grid.ColumnDefinitions>
+            <Label x:Name="item1" FontSize="18" Text="Item #1"/>
+            <Label x:Name="price1" FontSize="18" Text="Price #1" HorizontalOptions="End"
+                   Grid.Column="1"/>
 
-            <Border BackgroundColor="DarkGrey" />
-            <Border Grid.Column="1" />
-            <Border Grid.Column="2" BackgroundColor="Gray" />
+            <Label x:Name="item2" FontSize="18" Text="Item #2" Grid.Row="1"/>
+            <Label x:Name="price2" FontSize="18" Text="Price #2" HorizontalOptions="End"
+       Grid.Row="1" Grid.Column="1"/>
 
-            <Border
-                Grid.Row="1"
-                Grid.ColumnSpan="2"
-                BackgroundColor="LightGray" />
-            <Border Grid.Row="1" Grid.Column="2" />
+            <Label x:Name="item3" FontSize="18" Text="Item #3" Grid.Row="2"/>
+            <Label x:Name="price3" FontSize="18" Text="Price #3" HorizontalOptions="End"
+       Grid.Row="2" Grid.Column="1"/>
+
+            <Label x:Name="item4" FontSize="18" Text="Item #4" Grid.Row="3"/>
+            <Label x:Name="price4" FontSize="18" Text="Price #4" HorizontalOptions="End"
+       Grid.Row="3" Grid.Column="1"/>
+
+            <Label x:Name="item5" FontSize="18" Text="Item #5" Grid.Row="4"/>
+            <Label x:Name="price5" FontSize="18" Text="Price #5" HorizontalOptions="End"
+        Grid.Row="4" Grid.Column="1"/>
+
+            <Label x:Name="item6" FontSize="18" Text="Item #6" Grid.Row="5"/>
+            <Label x:Name="price6" FontSize="18" Text="Price #6" HorizontalOptions="End"
+        Grid.Row="5" Grid.Column="1"/>
+
+            <Label x:Name="guacamole" FontSize="18" FontAttributes="Italic" Text="guacamole" 
+                    HorizontalOptions="End" VerticalOptions="End" Grid.ColumnSpan="2" Grid.Row="5"
+       Grid.Column="1"/>
+
+
         </Grid>
     </ScrollView>
 
